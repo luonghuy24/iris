@@ -1,12 +1,16 @@
 'use strict';
 
-const slackClient = require('../server/slackClient');
-const service = require("../server/service"); // Ties into service.js 
-const http    = require('http'); // part of base node.js
+const slackClient       = require('../server/slackClient');
+const service           = require("../server/service"); // Ties into service.js 
+const http              = require('http'); // part of base node.js
 
-const slackToken = '';
-const slackLogLevel = 'verbose'; //debug
-const rtm = slackClient.init(slackToken, slackLogLevel);
+const slackToken        = '';
+const slackLogLevel     = 'verbose'; //debug or verbose---
+
+const witToken          = '';
+const witClient         = require('../server/witClient')(witToken);
+
+const rtm               = slackClient.init(slackToken, slackLogLevel);
 
 rtm.start();
 

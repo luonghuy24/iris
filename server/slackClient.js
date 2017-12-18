@@ -14,7 +14,7 @@ let rtm = null;
 
 
 function handleOnAtuhenticated(rtmStartData){
-    console.log(`Logged in as ${rtmStartData.self.name} of team ${rtmStartData.team.name}, but not yet connected to a chanel`);
+    console.log(`Logged in as ${rtmStartData.self.name} of team ${rtmStartData.team.name}, but not yet connected to a channel`);
 }
 
 function handleOnMessage(message){
