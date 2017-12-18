@@ -4,7 +4,7 @@ const slackClient = require('../server/slackClient');
 const service = require("../server/service"); // Ties into service.js 
 const http    = require('http'); // part of base node.js
 
-const slackToken = 'xoxb-287815083456-mcd3uIuAk5dnTVTRiUmIHQlm';
+const slackToken = '';
 const slackLogLevel = 'verbose'; //debug
 const rtm = slackClient.init(slackToken, slackLogLevel);
 
